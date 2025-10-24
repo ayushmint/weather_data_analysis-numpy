@@ -7,7 +7,6 @@ print(arr)
 
 
 #avearage temprature 
-
 min = np.nanmean(arr[:, 2:3], axis=0)
 print("minimum temprature is",min )
 
@@ -56,8 +55,10 @@ print(maxs)
 wind = np.nanmean(arr[:,8])
 print(wind)
 
+#maximum wind
 windmax =np.nanmax(arr[:,8])
 print(windmax)
+
 
 humidity = arr[:,13] + arr[:,14]
 humMean= np.nanmean(humidity)
@@ -70,21 +71,22 @@ print(days)
 
 # wind speed on hot days
 hotdays= np.nanmean(arr[:,3])
-
 find=np.where(arr[:,3]>hotdays)
 print(find)
 print(arr[find, 8])
 
 
-
+#thresold
 a=np.nanmean(arr[:,3]) +1.5
 b=np.nanstd(arr[:,3])
 c= a*b
 print(c)
 
+#hottest day accrodn to thresold
 god = np.where(arr[:,3] > c)
 print(arr[god, 3])
 
+#coldest day accrodn to thresold
 gods = np.where(arr[:,3] < c)
 print(arr[gods, 3])
 
