@@ -1,7 +1,7 @@
 Weather Data analysis 
-1.Take weather data and store in a file name weatherAUS.CSV
-2. in python file i read the weather datafile using pandas libraray 
-      Now the analysis satrted 
+     1.Take weather data and store in a file name weatherAUS.CSV
+     2 in python file i read the weather datafile using pandas libraray 
+     Now the analysis satrted 
 
     1.average minimum temprature   
     2.average maximum temprature
